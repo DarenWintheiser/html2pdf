@@ -1,6 +1,6 @@
 <?php
 /**
- * HTML2PDF Librairy - main class
+**!HTML2PDF Librairy - main class
  *
  * HTML => PDF convertor
  * distributed under the LGPL License
@@ -3140,7 +3140,7 @@ if (!defined('__CLASS_HTML2PDF__')) {
             if (!isset($param['type']))     $param['type'] = 'C39';
             if (!isset($param['value']))    $param['value']    = 0;
             if (!isset($param['label']))    $param['label']    = 'label';
-            if (!isset($param['style']['color'])) $param['style']['color'] = '#000000';
+            if (!isset($param['style']['color'])) $param['style']['color'] = ' 000000';
 
             if ($this->_testIsDeprecated && (isset($param['bar_h']) || isset($param['bar_w'])))
                 throw new HTML2PDF_exception(9, array('BARCODE', 'bar_h, bar_w'));
@@ -3204,7 +3204,7 @@ if (!defined('__CLASS_HTML2PDF__')) {
 
             if (!isset($param['value']))                     $param['value'] = '';
             if (!isset($param['ec']))                        $param['ec'] = 'H';
-            if (!isset($param['style']['color']))            $param['style']['color'] = '#000000';
+            if (!isset($param['style']['color']))            $param['style']['color'] = ' 000000';
             if (!isset($param['style']['background-color'])) $param['style']['background-color'] = '#FFFFFF';
             if (isset($param['style']['border'])) {
                 $borders = $param['style']['border']!='none';
@@ -6607,4 +6607,4 @@ if (!defined('__CLASS_HTML2PDF__')) {
         }
 
     }
-}
+} 
